@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KartApp</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <!-- activityMain -->
+    <string name="dialogStedNavn">Navn</string>
+    <string name="dialogBeskrivelse">Beskrivelse</string>
+</resources>

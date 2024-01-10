@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".PreferanserActivity"
+    tools:ignore="MissingConstraints">
+
+    <!-- Applikasjonsvindu tittel -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="@string/preferanseTittel"
+        app:titleTextAppearance="@style/toolbarHorizontalStyle" />
+
+    <!-- Scrolling -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Velg språk tittel -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/språk"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <!-- Velg norsk språk knapp -->
+            <Button
+                android:id="@+id/norskButton"
+                style="@style/activityPreferanserButtonHorizontalStyle"
+                android:drawableRight="@drawable/norsk_flagg"
+                android:text="@string/norskButton" />
+
+            <!-- Velg tysk språk knapp -->
+            <Button
+                android:id="@+id/tyskButton"
+                style="@style/activityPreferanserButtonHorizontalStyle"
+                android:drawableRight="@drawable/tysk_flagg"
+                android:text="@string/tyskButton" />
+
+
+            <!-- Antall spørsmål tittel -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:text="@string/antallSpørsmålTittel"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <!-- Fem spørsmål knapp -->
+            <Button
+                android:id="@+id/femSpørsmålButton"
+                style="@style/activityPreferanserButtonHorizontalStyle"
+                android:text="@string/femSpørsmålButton" />
+
+            <!-- Ti spørsmål knapp -->
+            <Button
+                android:id="@+id/tiSpørsmålButton"
+                style="@style/activityPreferanserButtonHorizontalStyle"
+                android:text="@string/tiSpørsmålButton" />
+
+            <!-- Femten spørsmål knapp -->
+            <Button
+                android:id="@+id/femtenSpørsmålButton"
+                style="@style/activityPreferanserButtonHorizontalStyle"
+                android:text="@string/femtenSpørsmålButton" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

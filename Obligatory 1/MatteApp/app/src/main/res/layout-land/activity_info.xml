@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PreferanserActivity"
+    tools:ignore="MissingConstraints">
+
+    <!-- Toolbar som viser hvilket vindu man er i -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="@string/infoTittel"
+        app:titleTextAppearance="@style/toolbarHorizontalStyle" />
+
+
+    <!-- Scrolling -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- Om spillet tittel -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/omSpilletTittel"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <!-- Generelt info tekst -->
+            <TextView
+                style="@style/activityInfoTekstHorizontalStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/informasjonTekstGenerelt" />
+
+            <!-- Spill tittel -->
+            <TextView
+                style="@style/activityInfoTittelHorizontalStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/spillInfoTittel" />
+
+            <!-- Spill info tekst -->
+            <TextView
+                style="@style/activityInfoTekstHorizontalStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/informasjonTekstSpill" />
+
+            <!-- Preferanser tittel -->
+            <TextView
+                style="@style/activityInfoTittelHorizontalStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/preferanserInfoTittel" />
+
+            <!-- Preferanser info tekst -->
+            <TextView
+                style="@style/activityInfoTekstHorizontalStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/informasjonTekstPreferanser" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

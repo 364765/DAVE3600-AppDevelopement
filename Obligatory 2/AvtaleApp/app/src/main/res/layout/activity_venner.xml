@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.s364765.VennerActivity">
+
+    <!-- Layout for tittel og knapp -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        tools:context="com.example.s364765.VennerActivity">
+
+        <!-- Tittel -->
+        <TextView
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:text="@string/vennerTittel"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <!-- Legg til venn knapp -->
+        <Button
+            android:id="@+id/leggtilBtn"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="220dp"
+            android:background="@drawable/add" />
+    </LinearLayout>
+
+    <!-- List view med venner -->
+    <ListView
+        android:id="@+id/vennerListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp" />
+
+</RelativeLayout>

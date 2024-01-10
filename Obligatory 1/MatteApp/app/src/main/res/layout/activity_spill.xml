@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".PreferanserActivity"
+    tools:ignore="MissingConstraints">
+
+    <!-- Applikasjonsvindu tittel -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="@string/spillTittel" />
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/appikon_liten" />
+
+    <!-- Felles layout for nåværende regnestykke og totale regnestykker -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nåverendeRegnestykke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/totaleRegnestykker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <!-- Felles layout for regnestykke og innskrevet svar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/randomRegnestykke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/svar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <!-- Tilbakemelding felt -->
+    <TextView
+        android:id="@+id/tilbakemelding"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/tilbakemelding"
+        android:textSize="30sp" />
+
+    <!-- Alle tall knapper -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center">
+
+        <!-- Knapp 1-3 -->
+        <TableRow android:gravity="center">
+
+            <Button
+                android:id="@+id/knapp1"
+                style="@style/activitySpillTallKnapperVerticalStyle"
+                android:text="@string/knapp1" />
+
+            <Button
+                android:id="@+id/knapp2"
+                style="@style/activitySpillTallKnapperVerticalStyle"
+                android:text="@string/knapp2" />
+
+            <Button
+                android:id="@+id/knapp3"
+                style="@style/activitySpillTallKnapperVerticalStyle"
+                android:text="@string/knapp3" />
+        </TableRow>
+
+        <!--Knapp 4-6 -->
+        <TableRow android:gravity="center">
+
+            <Button
+                android:id="@+id/knapp4"
+                style="@style/activitySpillTallKnapperVerticalStyle"
+                android:text="@string/knapp4" />
+
+            <Button
+                android:id="@+id/knapp5"
+                style="@style/activitySpillTallKnapperVerticalStyle"
+                android:text="@string/knapp5" />
+
+            <Button
+                android:id="@+id/knapp6"
+                style="@style/activitySpillTallKnapperVerticalStyle"
+
+                android:text="@string/knapp6" />
+        </TableRow>
+
+        <!-- Knapp 7-9 -->
+        <TableRow android:gravity="center">
+
+            <Button
+                android:id="@+id/knapp7"
+                style="@style/activitySpillTallKnapperVerticalStyle"
+                android:text="@string/knapp7" />
+
+            <Button
+                android:id="@+id/knapp8"
+                style="@style/activitySpillTallKnapperVerticalStyle"
+                android:text="@string/knapp8" />
+
+            <Button
+                android:id="@+id/knapp9"
+                style="@style/activitySpillTallKnapperVerticalStyle"
+                android:text="@string/knapp9" />
+        </TableRow>
+    </TableLayout>
+
+    <!-- Knapp 0 og slett -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Knapp 0 -->
+        <Button
+            android:id="@+id/knapp10"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded_button"
+            android:text="0"
+            android:textSize="30sp" />
+
+        <!-- Knapp slett -->
+        <Button
+            android:id="@+id/slettButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded_button"
+            android:drawableRight="@drawable/slettikon"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"
+            android:paddingEnd="10dp"
+            android:scaleType="fitCenter"
+            android:text="@string/slettButton"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- Knapp svar -->
+    <Button
+        android:id="@+id/svarButton"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_button"
+        android:drawableRight="@drawable/svarikon"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:scaleType="fitCenter"
+        android:text="@string/svarButton"
+        android:textColor="#008000"
+        android:textSize="30sp" />
+
+</LinearLayout>

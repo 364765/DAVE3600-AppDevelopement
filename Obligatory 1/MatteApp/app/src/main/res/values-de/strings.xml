@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MathematikApp</string>
+    <string name="spillButton">Spiel beginnen</string>
+    <string name="infoButton">Über das Spiel</string>
+    <string name="preferanserButton">Präferenzen</string>
+    <string name="språk">Wähle deine Sprache</string>
+    <string name="norskButton">Norwegisch</string>
+    <string name="tyskButton">Deutsch</string>
+    <string name="preferanseTittel">Präferenzen</string>
+    <string name="infoTittel">Über das Spiel</string>
+    <string name="spillTittel">Spiel</string>
+    <string name="svar">Antwort</string>
+    <string name="slettButton">Löschen</string>
+    <string name="svarButton">Antwort</string>
+    <string name="avsluttDialogTittel">Sind Sie sicher, dass Sie das Spiel beenden möchten?</string>
+    <string name="avsluttOk">Ja</string>
+    <string name="avsluttIkkeOk">Nein</string>
+    <string name="spillFerdigDialogTittel">Es sind keine weiteren Fragen verfügbar</string>
+    <string name="hjem">Heim</string>
+    <string name="regnestykkeTeller">Arithmetik</string>
+    <string name="riktigTilbakemelding">Richtig, gute Arbeit!</string>
+    <string name="feilTilbakemelding">Falsch, versuchen Sie es noch einmal, indem Sie an Ihren Fingern zählen</string>
+    <string name="antallSpørsmålTittel">Wählen Sie die Anzahl der Fragen aus</string>
+    <string name="femSpørsmålButton">Fünf Fragen</string>
+    <string name="tiSpørsmålButton">Zehn Fragen</string>
+    <string name="femtenSpørsmålButton">Fünfzehn Fragen</string>
+    <string name="lukk">Schließen</string>
+    <string name="omSpilletTittel">Ein paar Infos zu MatteApp</string>
+    <string name="spillInfoTittel">Spiel</string>
+    <string name="informasjonTekstGenerelt">MatteApp ist eine Anwendung für Kinder, mit der sie Addition lernen können.</string>
+    <string name="informasjonTekstSpill">Im Spielteil der App wird dem Benutzer eine Berechnung mit zwei ganzen Zahlen angezeigt.     Der Benutzer kann seine Antwort über Schaltflächen mit Zahlen von 0 bis 9 eingeben und über die Schaltfläche „Löschen“ Zahlen aus der Antwort löschen. Wenn der Benutzer falsch antwortet,         Es erscheint ein Fenster mit Feedback, bei richtiger Antwort erscheint ein grüner Text mit Feedback und die nächste Frage kommt automatisch in 3 Sekunden.         Während des Spiels kann der Benutzer außerdem sehen, an welchen Berechnungen er sich gerade befindet, sowie die Gesamtzahl der Berechnungen.</string>
+    <string name="informasjonTekstPreferanser">Im Einstellungsbereich der App kann der Nutzer zwischen den Sprachen Norwegisch und Deutsch wählen. Der Benutzer kann hier auch die Anzahl der Berechnungen festlegen         Welche Berechnungen er im Spielbereich der App beantworten muss, kann der Nutzer zwischen 5, 10 und 15 Berechnungen wählen.</string>
+    <string name="preferanserInfoTittel">Präferenzen</string>
+</resources>

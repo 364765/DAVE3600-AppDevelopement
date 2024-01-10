@@ -1,0 +1,26 @@
+<resources>
+    <!-- activityMain -->
+    <string name="avtalerTittel">Avtaler</string>
+    <string name="app_name">AvtaleApp</string>
+    <string name="AvtaleBtn">Ny avtale</string>
+    <string name="vennerBtn">Venner</string>
+    <string name="preferanserBtn">Instillinger</string>
+
+    <string name="dialogInputAvtaleNavn">Avtale navn</string>
+    <string name="dialogInputDato">Dato dd.mm.yy</string>
+    <string name="dialogInputKlokkeslett">Klokkeslett</string>
+    <string name="dialogInputTreffsted">Treffsted</string>
+    <string name="dialogInputVenner">Venn1, Venn2, Venn3 osv…</string>
+
+    <!-- activityVenner -->
+    <string name="vennerTittel">Dine venner</string>
+    <string name="leggTilBtn">+</string>
+
+    <string name="dialogInputNavn">Navn</string>
+    <string name="dialogInputTelefonNr">Telefonnummer</string>
+
+    <!-- Notifikasjon -->
+    <string name="channel_name">Min Kanal</string>
+    <string name="channel_description">Min Beskrivelse</string>
+
+</resources>

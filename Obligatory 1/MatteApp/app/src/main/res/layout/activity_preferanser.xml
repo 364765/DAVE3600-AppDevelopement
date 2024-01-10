@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PreferanserActivity"
+    tools:ignore="MissingConstraints">
+
+    <!-- Toolbar som viser hvilket vindu man er i -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="@string/preferanseTittel" />
+
+
+    <!-- Velg språk tittel -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/språk"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <!--Sett norsk språk knapp knapp -->
+    <Button
+        android:id="@+id/norskButton"
+        style="@style/activityPreferanserButtonVerticalStyle"
+        android:drawableRight="@drawable/norsk_flagg"
+        android:text="@string/norskButton" />
+
+    <!-- Sett tysk språk knapp -->
+    <Button
+        android:id="@+id/tyskButton"
+        style="@style/activityPreferanserButtonVerticalStyle"
+        android:drawableRight="@drawable/tysk_flagg"
+        android:text="@string/tyskButton" />
+
+
+    <!-- Antall spørsmål tittel -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/antallSpørsmålTittel"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <!-- Fem spørsmål knapp -->
+    <Button
+        android:id="@+id/femSpørsmålButton"
+        style="@style/activityPreferanserButtonVerticalStyle"
+        android:text="@string/femSpørsmålButton" />
+
+    <!-- Ti spørsmål knapp -->
+    <Button
+        android:id="@+id/tiSpørsmålButton"
+        style="@style/activityPreferanserButtonVerticalStyle"
+        android:text="@string/tiSpørsmålButton" />
+
+    <!-- Femten spørsmål knapp -->
+    <Button
+        android:id="@+id/femtenSpørsmålButton"
+        style="@style/activityPreferanserButtonVerticalStyle"
+        android:text="@string/femtenSpørsmålButton" />
+</LinearLayout>
